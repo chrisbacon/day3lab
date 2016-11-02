@@ -19,3 +19,9 @@ def find_item?(array, item)
   end
   return false
 end
+
+def first_key_name(hash)
+  keys_array = hash.keys
+  first_key = keys_array[0]
+  return first_key
+end

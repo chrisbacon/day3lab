@@ -21,14 +21,21 @@ class Lab < MiniTest::Test
   def test_find_item
     hogwarts = ['Hufflepuff', 'Slytherin','Gryffindor', 'Ravenclaw']
     result = find_item?(hogwarts, 'Ravenclaw')
-    assert(result)  
+    assert_equal(true, result)  
     result = find_item?(hogwarts, 'Batman')
     assert_equal(false, result)
   end
 
 
   def test_first_key_name
-
+    teacher_wallets = {
+      'Sandy' => 12,
+      'Zsolt' => 10,
+      'Val' => 1356,
+      'Jay' => 1
+    }
+    result = first_key_name(teacher_wallets)
+    assert_equal('Sandy', result)
   end
 
 
