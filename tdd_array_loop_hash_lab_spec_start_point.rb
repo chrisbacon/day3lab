@@ -20,6 +20,10 @@ class Lab < MiniTest::Test
 
   def test_find_item
     hogwarts = ['Hufflepuff', 'Slytherin','Gryffindor', 'Ravenclaw']
+    result = find_item?(hogwarts, 'Ravenclaw')
+    assert(result)  
+    result = find_item?(hogwarts, 'Batman')
+    assert_equal(false, result)
   end
 
 

@@ -10,3 +10,12 @@ def sum_array(array)
   end
   return sum
 end
+
+def find_item?(array, item)
+  for thing in array 
+    if thing == item
+      return true
+    end
+  end
+  return false
+end
