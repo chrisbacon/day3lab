@@ -12,7 +12,9 @@ class Lab < MiniTest::Test
 
 
   def test_sum_array
-
+    data = [1, 2, 3, 4, 5]
+    result = sum_array(data)
+    assert_equal(15, result)
   end
 
 
