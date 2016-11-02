@@ -19,7 +19,7 @@ class Lab < MiniTest::Test
 
 
   def test_find_item
-
+    hogwarts = ['Hufflepuff', 'Slytherin','Gryffindor', 'Ravenclaw']
   end
 
 
