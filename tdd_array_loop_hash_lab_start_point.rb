@@ -25,3 +25,13 @@ def first_key_name(hash)
   first_key = keys_array[0]
   return first_key
 end
+
+def array_of_capitals(countries_hash)
+  capitals = []
+  for key, value in countries_hash
+    capitals.push(value[:capital])
+  end
+  return capitals
+end
+
+
